@@ -1,0 +1,77 @@
+.weather-container {
+  background-color: white;
+  padding: 1.5rem;
+  color: black;
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  border-radius: 15px;
+  text-align: center;
+}
+.weather-container__icon {
+  max-width: 150px;
+}
+.weather-container__location {
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.weather-container__temperature-container, .weather-container__summary {
+  display: block;
+  font-size: 1.5em;
+}
+@media (min-width: 400px) {
+  .weather-container__temperature-container, .weather-container__summary {
+    margin: .5em;
+    display: inline-block;
+    font-size: 1.5em;
+  }
+}
+.weather-container__temperature-container {
+  position: relative;
+}
+@media (min-width: 400px) {
+  .weather-container__temperature-container:before {
+    content: "";
+    position: absolute;
+    right: -30%;
+    top: 0;
+    bottom: 0;
+    color: inherit;
+    border-right: solid 1px;
+  }
+}
+
+.weather-status--clear {
+  background-image: linear-gradient(#7db9e8, #1e5799 30%);
+  color: #FFFFFF;
+}
+.weather-status--cloudy {
+  background-image: linear-gradient(#E1EBF4, #57A9ED 30%);
+  color: #FFFFFF;
+}
+.weather-status--rain {
+  background-image: linear-gradient(#6D869B, #8EB0CC 20%);
+  color: #FFFFFF;
+}
+.weather-status--snow {
+  background-image: linear-gradient(#fefefe, #e2e2e2 60%);
+  color: #22096B;
+}
+.weather-status--wind {
+  background-image: linear-gradient(#b1dbef, #a4c7d6);
+  color: #AA2061;
+}
+.weather-status--thunderstorm {
+  background-image: #28343b;
+  background-image: linear-gradient(#28343b 29%, #828c95 95%);
+}
+.weather-status--fog {
+  background-color: #a7c7dc;
+  background-image: linear-gradient(#a7c7dc, #85b2d3);
+  color: #FFFFFF;
+}
+.weather-status--sun {
+  background-image: linear-gradient(#FFD000, #EFF92A 20%);
+  color: brown;
+}

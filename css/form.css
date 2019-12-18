@@ -1,0 +1,56 @@
+.form {
+  position: relative;
+  padding: .5em;
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  max-width: 250px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+}
+.form__search-inpt, .form__submit-inpt {
+  padding: .5em;
+  border: none;
+  transition: .5s;
+  margin: 1px;
+}
+.form__search-inpt {
+  border: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  -ms-flex: 1;
+      flex: 1;
+}
+.form__search-inpt:focus {
+  background-color: #F1F1F1;
+}
+.form__submit-inpt {
+  -ms-flex: 1;
+      flex: 1;
+  background-color: white;
+  letter-spacing: 1px;
+  font-transform: uppercase;
+  background-color: #72857D;
+  color: #EDEBEB;
+}
+.form__submit-inpt:focus, .form__submit-inpt:hover {
+  background-color: #D30708;
+  color: #FFFFFF;
+  box-shadow: inset 0 0  2px 2px #FFFFFF;
+  cursor: pointer;
+}
+.form__location-btn {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  position: absolute;
+  right: -1em;
+  top: .4em;
+  font-size: 1.5em;
+}
+.form__location-btn:hover, .form__location-btn:active {
+  cursor: pointer;
+}

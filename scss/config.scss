@@ -1,0 +1,50 @@
+
+.config {
+	background-color: transparent;
+	padding: .5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	&__toggle-btn {
+		display: block;
+		border-radius: 50%;
+		border: none;
+		background-color: transparent;
+		transition: .5s;
+		color: black;
+		:hover {
+			cursor: pointer;
+		}
+	}
+	&__options {
+		background-color: #ffffff;
+		color: #000000;
+		border-radius: 10px;
+		padding: .5em;
+		font-size: 1.5em;
+		position: absolute;
+		text-align: left;
+		z-index: 1;
+		white-space: nowrap;
+	}
+	
+	&__label {
+		display: block;
+		
+
+	}
+	&__input {
+		margin-left: auto;
+		display: inline-block;
+		margin-right: 5px;
+	}
+	&__icon {
+		color: white;
+		font-size: 2em;
+	}
+}
+.config--opened {
+	.config__toggle-btn {
+		transform: rotate(90deg);
+	}
+}

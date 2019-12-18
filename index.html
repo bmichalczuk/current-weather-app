@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Current Weather App for Free Code Camp">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<title>Current Weather</title>
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1 class="header__heading">Current Weather App</h1>
+            <div class="config">
+                <button class="config__toggle-btn" title="Configuration"><span class="icon-cog config__icon"></span><span class="visualy-hidden">Show/hide</span></button>
+                <div class="config__options">
+                    
+                    <label class="config__label" for="Celsius">
+                        <input class="config__input" checked value="Celsius" title="Celsius degrees" id="Celsius" label="Celsius" type="radio" name="temperature-unit">Celsius
+                    </label>   
+                               
+                    <label class="config__label" for="Fahrenheit">
+                        <input class="config__input" value="Fahrenheit" title="Fahrenheit degrees" id="Fahrenheit" label="Fahrenheit" type="radio" name="temperature-unit">Fahrenheit  
+                    </label>
+                </div>
+            </div>   
+            <form class="form" action="" method="">
+                <button title="Search weather for your location" class="form__location-btn"><span class="icon-location-outline form__location-icon"><span class="visualy-hidden">Search weather for your location</span></button>
+                <input class="form__search-inpt" type="search" title="Search for place">
+                <input class="form__submit-inpt icon-spinner animate-spin" type="submit" value="Search" title="Search for place">
+            </form>
+        </header>
+        
+         <footer class="footer">
+            <p class="footer__author">Made by barm1c, <a class="footer__link" href="https://darksky.net/poweredby" target="_blank">Powered by Dark Sky</a></p>
+            
+            <div >Icons made by <a class="footer__link" href="http://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>, <a class="footer__link" href="http://www.flaticon.com/packs/weather-14" title="Roundicons">Roundicons</a> and <a class="footer__link" href="http://www.flaticon.com/free-icon/fogg_213992#" title="Darius Dann">Darius Dann</a> from <a class="footer__link"  href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
+    </div><!--app end-->
+
+  	<script src="js/main.js">
+    </script>
+</body>
+</html>

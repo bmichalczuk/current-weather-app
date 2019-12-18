@@ -1,0 +1,83 @@
+.weather-container {
+	background-color: white;
+	padding: 1.5rem;
+	color: black;
+	width: 100%;
+	max-width: 600px;
+	margin: 1.5rem auto;
+	border-radius: 15px;
+	text-align: center;
+	&__icon {
+		max-width: 150px;
+	}
+	&__location {
+		font-size: 2em;
+		font-style: italic;
+		letter-spacing: 1px;
+	}
+	&__temperature-container,
+	&__summary {
+		display: block;
+		font-size: 1.5em;
+		
+		@media (min-width: 400px) {
+			margin: .5em;
+			display: inline-block;
+			font-size: 1.5em;
+		}
+	}
+	&__temperature-container {
+		position: relative;
+		@media (min-width: 400px) {
+			&:before {
+				content: "";
+				position: absolute;
+				right: -30%;
+				top: 0;
+				bottom: 0;
+				
+				color: inherit;
+				border-right: solid 1px;
+			}
+		}
+	}
+	&__summary {
+
+	}
+}
+
+.weather-status {
+	&--clear {
+    background-image: linear-gradient( #7db9e8, #1e5799 30%);
+	color: #FFFFFF;
+	}
+	&--cloudy {
+    background-image: linear-gradient(#E1EBF4, #57A9ED 30%);
+	color: #FFFFFF;
+	}
+	&--rain {
+    background-image: linear-gradient(#6D869B, #8EB0CC 20%);
+	color: #FFFFFF;
+	}	
+	&--snow {
+    background-image: linear-gradient(rgb(254,254,254), rgb(226,226,226) 60%);
+	color: #22096B;
+	}
+	&--wind {
+    background-image: linear-gradient(rgb(177, 219, 239), rgb(164, 199, 214));
+    color: #AA2061;
+	}
+	&--thunderstorm {
+    background-image: rgb(40,52,59);
+    background-image: linear-gradient(rgba(40,52,59,1) 29%, rgba(130,140,149,1) 95%);
+	}
+	&--fog {
+    background-color: rgb(167,199,220);
+	background-image: linear-gradient(rgba(167,199,220,1), rgba(133,178,211,1));
+	color: #FFFFFF;
+	}
+	&--sun {
+	background-image: linear-gradient(#FFD000, #EFF92A 20%);
+	color: brown;
+	}
+}
